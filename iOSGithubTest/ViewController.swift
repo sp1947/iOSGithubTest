@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addAction(_ sender: Any) {
-        let total = Double(firstTextField.text!)! + Double(secondTextField.text!)!
-
+        var total = Double(firstTextField.text!)! + Double(secondTextField.text!)!
+        total = total + 10.0
         tottalLabel.text = String(format:"%f", total)
     }
     
